@@ -1,0 +1,64 @@
+/* Page Header */
+.page-header {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("https://via.placeholder.com/1920x400");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 80px 0;
+  margin-bottom: 40px;
+}
+
+.page-header h1 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Exhibition Cards */
+.current-exhibitions .card,
+.upcoming-exhibitions .card {
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.current-exhibitions .card:hover,
+.upcoming-exhibitions .card:hover {
+  transform: translateY(-5px);
+}
+
+.current-exhibitions .card-img-top,
+.upcoming-exhibitions .card-img-top {
+  height: 300px;
+  object-fit: cover;
+}
+
+/* Section Headers */
+section h2 {
+  color: var(--primary-color);
+  position: relative;
+  padding-bottom: 15px;
+  margin-bottom: 30px;
+}
+
+section h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background-color: var(--accent-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .page-header {
+    padding: 40px 0;
+    text-align: center;
+  }
+
+  .current-exhibitions .card,
+  .upcoming-exhibitions .card {
+    margin-bottom: 30px;
+  }
+}

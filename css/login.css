@@ -1,0 +1,16 @@
+body {
+  background: var(--light-bg);
+}
+.login-section {
+  min-height: 100vh;
+  background: linear-gradient(120deg, #f8f9fa 60%, #e74c3c10 100%);
+}
+.card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(44, 62, 80, 0.08);
+}
+.btn-primary {
+  padding: 10px 0;
+  font-size: 1.1rem;
+}
